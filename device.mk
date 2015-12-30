@@ -264,7 +264,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.ota.romname=temasek-oneplus2 \
     ro.ota.version=$(shell date +%F | sed s@-@@g) \
-    ro.ota.manifest=https://raw.githubusercontent.com/regalstreak/android_device_oneplus_oneplus2/cm-13.0-Temasek/ota.xml
+    ro.ota.manifest=http://regalstreak.netai.net/oneplus2/temasek/temasek.xml
 
 # WiFi
 PRODUCT_COPY_FILES += \
