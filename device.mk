@@ -250,6 +250,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# Temasek OTAUpdates
+PRODUCT_PACKAGES += \
+    OTAUpdates
+
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.ota.romname=temasek-oneplus2 \
+    ro.ota.version=$(shell date +%F | sed s@-@@g) \
+    ro.ota.manifest=https://raw.githubusercontent.com/regalstreak/android_device_oneplus_oneplus2/cm-13.0-temasek/ota.xml
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat \
