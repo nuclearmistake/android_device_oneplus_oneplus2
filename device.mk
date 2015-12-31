@@ -285,6 +285,5 @@ PRODUCT_PACKAGES += \
     curl \
     libnl_2 \
     libbson \
-    libcnefeatureconfig \
     libtinyxml \
     libxml2
